@@ -95,6 +95,7 @@
 - good evening
 - hello
 - How are you
+- how are you
 
 ## intent:inform
 - $10
