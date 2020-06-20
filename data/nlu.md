@@ -1,25 +1,3 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-- [intent:affirm](#intentaffirm)
-- [intent:ask_transfer_charge](#intentask_transfer_charge)
-- [intent:check_balance](#intentcheck_balance)
-- [intent:check_earnings](#intentcheck_earnings)
-- [intent:deny](#intentdeny)
-- [intent:goodbye](#intentgoodbye)
-- [intent:greet](#intentgreet)
-- [intent:inform](#intentinform)
-- [intent:pay_cc](#intentpay_cc)
-- [intent:search_transactions](#intentsearch_transactions)
-- [intent:thankyou](#intentthankyou)
-- [intent:transfer_money](#intenttransfer_money)
-- [intent:check_recipients](#intentcheck_recipients)
-- [synonym:gringotts](#synonymgringotts)
-- [synonym:credit](#synonymcredit)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 ## intent:affirm
 - indeed
 - correct
@@ -77,6 +55,7 @@
 - whats my [gringots](credit_card) card balance?
 - what's my [gringot](credit_card)'s card balance?
 - what's my [gringots](credit_card) account balance?
+- [Wcurrent balance](payment_amount)
 
 ## intent:check_earnings
 - How much money went into my account last month?
@@ -209,6 +188,8 @@
 - I want to pay $500 on my [gringotts](credit_card) [credit card](account_type) on Sunday
 - I want to pay my [current balance](payment_amount) on my [gringotts](credit_card) [credit card](account_type) today
 - i need to pay off my [gringots](credit_card) [credit card](account_type)
+- I want to pay [iron bank](credit_card) [credit card]{"entity": "account_type", "value": "credit"}
+- pay my [credit card]{"entity": "account_type", "value": "credit"}
 
 ## intent:search_transactions
 - how much did I spend at [Target](vendor_name) this week?
@@ -225,6 +206,7 @@
 - can I look at past transactions
 - I want to search my transactions with [amazon](vendor_name)
 - can i seem my transactions with [target](vendor_name)
+- what is my earning with [amazon](vendor_name)
 
 ## intent:thankyou
 - thank you goodbye
@@ -265,6 +247,12 @@
 - who's in my recipient list?
 - who can I transfer money to?
 
+## synonym:credit
+- credit card
+- credit cards
+- credit account
+- credit accounts
+
 ## synonym:gringotts
 - gringots
 - Gringots
@@ -276,9 +264,3 @@
 - gringott's
 - Gringtos
 - gringtos
-
-## synonym:credit
-- credit card
-- credit cards
-- credit account
-- credit accounts
