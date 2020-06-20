@@ -96,6 +96,7 @@
 - hello
 - How are you
 - how are you
+- HI,how are you
 
 ## intent:inform
 - $10
