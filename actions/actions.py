@@ -123,7 +123,7 @@ class PayCCForm(FormAction):
             return {
                 "payment_amount": f"{amount:.2f}",
                 "payment_amount_type": amount_type,
-                "currency": "$",
+                "currency": "$","₹",
             }
 
         else:
