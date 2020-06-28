@@ -181,6 +181,13 @@ responses:
   - text: These are your known recipients {known_recipients}.
   utter_credit_card_balance:
   - text: The current balance for your {credit_card} account is {currency}{amount_of_money}.
+  utter_which_currency:
+  - text: In which {currency}{amount_of_money}, would you like to make payment?
+    buttons:
+    - title: dollars
+      payload: /affirm
+    - title: rupees
+      payload: /affirm
 
 actions:
 - action_account_balance
