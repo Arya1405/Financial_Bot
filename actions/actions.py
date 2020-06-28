@@ -120,6 +120,7 @@ class PayCCForm(FormAction):
             if account_balance < float(amount):
                 dispatcher.utter_message(template="utter_insufficient_funds")
                 return {"payment_amount": None}
+			dispatcher.utter_message(template="utter_which_currency")
             return {
                 "payment_amount": f"{amount:.2f}",
                 "payment_amount_type": amount_type,
